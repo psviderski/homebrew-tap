@@ -5,12 +5,12 @@
 class Uncloud < Formula
   desc "Uncloud CLI"
   homepage "https://uncloud.run"
-  version "0.1.1"
+  version "0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.1.1/uncloud_macos_amd64.tar.gz"
-      sha256 "24cb2bf1810ca20360713df75652fc7d9298c4df9a581c8ae702cf2a904d5b58"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.2/uncloud_macos_amd64.tar.gz"
+      sha256 "ad662ea53554cd22c25257b96308e4db6a97c452f97cf29d6fc95e6933b154c8"
 
       def install
         bin.install "uncloud"
@@ -18,8 +18,8 @@ class Uncloud < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.1.1/uncloud_macos_arm64.tar.gz"
-      sha256 "f2b97701254e0f811be03c80ca4574d94147466c6fa81bbe6cdca1333e4b2605"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.2/uncloud_macos_arm64.tar.gz"
+      sha256 "b1cdc79beade97bb7616550cb3929e9e7635521a23ac5b11647ca7d0ea4f5ea4"
 
       def install
         bin.install "uncloud"
@@ -31,8 +31,8 @@ class Uncloud < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/psviderski/uncloud/releases/download/v0.1.1/uncloud_linux_amd64.tar.gz"
-        sha256 "d3538020b641b3785728cc9abec802ad3a1a0bc518584d8d008e3d109be39738"
+        url "https://github.com/psviderski/uncloud/releases/download/v0.2/uncloud_linux_amd64.tar.gz"
+        sha256 "361eb4d4ff00a9d8129ebd91684e3de59ef32d16862f897337a5e2cee56cfe6a"
 
         def install
           bin.install "uncloud"
@@ -42,8 +42,8 @@ class Uncloud < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/psviderski/uncloud/releases/download/v0.1.1/uncloud_linux_arm64.tar.gz"
-        sha256 "54c78603bdd33fd9478fbcbde7475cb5de860be57af17021c8d0185b11559610"
+        url "https://github.com/psviderski/uncloud/releases/download/v0.2/uncloud_linux_arm64.tar.gz"
+        sha256 "7b0abe6071efb4413b9a55b0924063eaf5c73abea099cb43f0a16e19460acced"
 
         def install
           bin.install "uncloud"
