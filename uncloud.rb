@@ -10,7 +10,7 @@ class Uncloud < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/psviderski/uncloud/releases/download/v0.6.0/uncloud_macos_amd64.tar.gz"
-      sha256 "f79b3c666113253dd18b37476c2eb8279d92e73a8e1dc4531f3ef5b9aa62d6f4"
+      sha256 "5138db6f0205814f794f1c10b19196efb8e15f508dbf711f0f9e08a774073773"
 
       def install
         bin.install "uncloud"
@@ -19,7 +19,7 @@ class Uncloud < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/psviderski/uncloud/releases/download/v0.6.0/uncloud_macos_arm64.tar.gz"
-      sha256 "2e456f389512958345f7fe950388ecef28d0241c068b522083634eafcacfc208"
+      sha256 "affde314bf29047d25d4ee170100ee3394382ffac7aa6743ff49312542b0f79a"
 
       def install
         bin.install "uncloud"
@@ -32,7 +32,7 @@ class Uncloud < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/psviderski/uncloud/releases/download/v0.6.0/uncloud_linux_amd64.tar.gz"
-        sha256 "69e8a4c6eb4b20c3392dc55e6d21e2c52be30faee0b34da06fea3f916be30dd2"
+        sha256 "0fce1bab603686e10edbbe318078eec0ac1f6b7928e50263c7cb73de56a81e3f"
 
         def install
           bin.install "uncloud"
@@ -43,7 +43,7 @@ class Uncloud < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/psviderski/uncloud/releases/download/v0.6.0/uncloud_linux_arm64.tar.gz"
-        sha256 "c4d947c3feab13973ea851559084170d489608b4bf8e2d60ca431f500793bbbe"
+        sha256 "4d9e0bac6da411f92909559182e8ef60891b92adb6b60300cf7321b4c294f5b3"
 
         def install
           bin.install "uncloud"
