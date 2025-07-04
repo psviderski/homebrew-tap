@@ -1,10 +1,10 @@
 class DockerPussh < Formula
   desc "Docker CLI plugin to push images to remote Docker daemons via SSH"
   homepage "https://github.com/psviderski/unregistry"
-  url "https://github.com/psviderski/unregistry/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "da6c9398b5ddf24e156ca80a61fb07f09206d9f825200ed709099be62672620a"
+  url "https://github.com/psviderski/unregistry/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "0266b26b824a6e301996f03f5cfb87f91c61b42b6acb7e8a0c869b87990c5d7f"
   license "Apache-2.0"
-  version "0.1.0"
+  version "0.1.1"
 
   head "https://github.com/psviderski/unregistry.git", branch: "main"
 
