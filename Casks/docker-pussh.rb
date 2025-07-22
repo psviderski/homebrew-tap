@@ -2,7 +2,7 @@
 cask "docker-pussh" do
   desc "Upload Docker images to remote servers via SSH without an external registry."
   homepage "https://github.com/psviderski/unregistry"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "docker-pussh" do
 
   on_macos do
     on_intel do
-      url "https://github.com/psviderski/unregistry/releases/download/v0.2.0/unregistry_0.2.0_darwin_amd64.tar.gz"
-      sha256 "eac409aac7ca9645ae55f8e05a8b653e8e81d3d542034b436dc7f583f8386a6e"
+      url "https://github.com/psviderski/unregistry/releases/download/v0.2.1/unregistry_0.2.1_darwin_amd64.tar.gz"
+      sha256 "1a4df9882a05dedaadf1e7e5cce93014e425744227ee9ef124ce8f43c85b96ed"
     end
     on_arm do
-      url "https://github.com/psviderski/unregistry/releases/download/v0.2.0/unregistry_0.2.0_darwin_arm64.tar.gz"
-      sha256 "eac409aac7ca9645ae55f8e05a8b653e8e81d3d542034b436dc7f583f8386a6e"
+      url "https://github.com/psviderski/unregistry/releases/download/v0.2.1/unregistry_0.2.1_darwin_arm64.tar.gz"
+      sha256 "1a4df9882a05dedaadf1e7e5cce93014e425744227ee9ef124ce8f43c85b96ed"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/psviderski/unregistry/releases/download/v0.2.0/unregistry_0.2.0_linux_amd64.tar.gz"
-      sha256 "eac409aac7ca9645ae55f8e05a8b653e8e81d3d542034b436dc7f583f8386a6e"
+      url "https://github.com/psviderski/unregistry/releases/download/v0.2.1/unregistry_0.2.1_linux_amd64.tar.gz"
+      sha256 "1a4df9882a05dedaadf1e7e5cce93014e425744227ee9ef124ce8f43c85b96ed"
     end
     on_arm do
-      url "https://github.com/psviderski/unregistry/releases/download/v0.2.0/unregistry_0.2.0_linux_arm64.tar.gz"
-      sha256 "eac409aac7ca9645ae55f8e05a8b653e8e81d3d542034b436dc7f583f8386a6e"
+      url "https://github.com/psviderski/unregistry/releases/download/v0.2.1/unregistry_0.2.1_linux_arm64.tar.gz"
+      sha256 "1a4df9882a05dedaadf1e7e5cce93014e425744227ee9ef124ce8f43c85b96ed"
     end
   end
 
