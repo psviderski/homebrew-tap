@@ -5,12 +5,12 @@
 class Uncloud < Formula
   desc "Uncloud CLI"
   homepage "https://uncloud.run"
-  version "0.15.0"
+  version "0.15.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.15.0/uncloud_macos_amd64.tar.gz"
-      sha256 "f71b7d559defd1cd81349a8c5298280b26367e6ae6e1c5977063e6acff49cf04"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.15.1/uncloud_macos_amd64.tar.gz"
+      sha256 "6dd3a922330450c61fce8b920798779be49e00718ea6fbf40b360f0fc5e400bb"
 
       def install
         bin.install "uncloud"
@@ -18,8 +18,8 @@ class Uncloud < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.15.0/uncloud_macos_arm64.tar.gz"
-      sha256 "86c97b3298c23815a82f6e5b0999e30ede35555ab6c7e895961ca42cb3bbdc40"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.15.1/uncloud_macos_arm64.tar.gz"
+      sha256 "40f98dca1789047b0458db039ecddc50956920f7e1d30875a7caea9b25e9a986"
 
       def install
         bin.install "uncloud"
@@ -30,16 +30,16 @@ class Uncloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.15.0/uncloud_linux_amd64.tar.gz"
-      sha256 "0ccee791eb51ca3fa305f2baddd11580d2c2b5127338b3ae098b2b898be456b0"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.15.1/uncloud_linux_amd64.tar.gz"
+      sha256 "af769b397ef695616c1300f7218d7bccf2e324be1185b3733ea1b1809b1b21b0"
       def install
         bin.install "uncloud"
         bin.install_symlink "uncloud" => "uc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.15.0/uncloud_linux_arm64.tar.gz"
-      sha256 "b9383cb51268c4fab20317dc4be2e4bb69d5edd71e999c7602eeeb97a0e7cb42"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.15.1/uncloud_linux_arm64.tar.gz"
+      sha256 "564693fbf588bacfc4e34fc924758655fbb25029a0e4ade3ea228dee2a678b2e"
       def install
         bin.install "uncloud"
         bin.install_symlink "uncloud" => "uc"
