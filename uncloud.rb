@@ -5,23 +5,23 @@
 class Uncloud < Formula
   desc "Uncloud CLI"
   homepage "https://uncloud.run"
-  version "0.18.0"
+  version "0.19.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.18.0/uncloud_macos_amd64.tar.gz"
-      sha256 "ab50c4886f57565db57582c8ce335867611ae7f6eabf75d0cc38bb1b285a3408"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.19.0/uncloud_macos_amd64.tar.gz"
+      sha256 "9fbbf9c59c699519ea0e58ffc1141dc4cc114bf8759d404efe1f89bc14c693a6"
 
-      def install
+      define_method(:install) do
         bin.install "uncloud"
         bin.install_symlink "uncloud" => "uc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.18.0/uncloud_macos_arm64.tar.gz"
-      sha256 "fb2414282656fb61bde78aa8a0a7693339a6670affda6f18acbd37f6d124ae11"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.19.0/uncloud_macos_arm64.tar.gz"
+      sha256 "8d2e1ac5691f3043cd45ded0c335580f5d018ee0cb42a55591ca62664968367f"
 
-      def install
+      define_method(:install) do
         bin.install "uncloud"
         bin.install_symlink "uncloud" => "uc"
       end
@@ -30,17 +30,17 @@ class Uncloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.18.0/uncloud_linux_amd64.tar.gz"
-      sha256 "cde4288ba42748d5ff752d54324324c4b212fce29162f084da1bd2705fe4d44f"
-      def install
+      url "https://github.com/psviderski/uncloud/releases/download/v0.19.0/uncloud_linux_amd64.tar.gz"
+      sha256 "998af0e182e096a623c6e4518c64ed967dd8d05be6a0edfb3614fd8b655a2a96"
+      define_method(:install) do
         bin.install "uncloud"
         bin.install_symlink "uncloud" => "uc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.18.0/uncloud_linux_arm64.tar.gz"
-      sha256 "c797b95a1a22ba092baab74e273fa2596c12e8169424228c47014038a8317abe"
-      def install
+      url "https://github.com/psviderski/uncloud/releases/download/v0.19.0/uncloud_linux_arm64.tar.gz"
+      sha256 "0f34464122b21d8d8e5e14b93ebf33757ef54a7fe1e825fc596f9aee76a0179d"
+      define_method(:install) do
         bin.install "uncloud"
         bin.install_symlink "uncloud" => "uc"
       end
