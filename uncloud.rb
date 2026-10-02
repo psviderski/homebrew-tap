@@ -5,20 +5,20 @@
 class Uncloud < Formula
   desc "Uncloud CLI"
   homepage "https://uncloud.run"
-  version "0.20.0"
+  version "0.21.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.20.0/uc_macos_amd64.tar.gz"
-      sha256 "7f3bf83c173f3484153972b3953a5440fcbefab5e63a1edf507583dc4195afac"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.21.0/uc_macos_amd64.tar.gz"
+      sha256 "8da01fac78a0c8aa869340fe77740b44fd0ebd37d72bea48eadefd16981acfb4"
 
       define_method(:install) do
         bin.install "uc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.20.0/uc_macos_arm64.tar.gz"
-      sha256 "6a537eea767ab4d7d4af7c8df540a484af9afb7c02a856095d38ac0b7ddf1512"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.21.0/uc_macos_arm64.tar.gz"
+      sha256 "770f2a00f4366b1a829cbce2291cfd3be45e880e51e2852a3e276a43137cb40b"
 
       define_method(:install) do
         bin.install "uc"
@@ -28,15 +28,15 @@ class Uncloud < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.20.0/uc_linux_amd64.tar.gz"
-      sha256 "cc70dd68d3eb3323736f00266eb5f04b93ee6fdd119732f18492e11ef98530a8"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.21.0/uc_linux_amd64.tar.gz"
+      sha256 "11a87551d31144a5837c04d87d4f984c2a62b29052bb3a29d2a5cb72be7de616"
       define_method(:install) do
         bin.install "uc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/psviderski/uncloud/releases/download/v0.20.0/uc_linux_arm64.tar.gz"
-      sha256 "31938cf3a85d96968b197ef6c964f7de02f232a9f3cf40434df10a610b245915"
+      url "https://github.com/psviderski/uncloud/releases/download/v0.21.0/uc_linux_arm64.tar.gz"
+      sha256 "f9416a97a409865238e8a7be5ad4a0441cc8523c8f33967a9a87eea27109d47e"
       define_method(:install) do
         bin.install "uc"
       end
